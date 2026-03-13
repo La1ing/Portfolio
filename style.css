@@ -1,0 +1,21 @@
+﻿:root {
+  --icon-size: 64px;
+}
+
+.social-icons .fa {
+  font-size: var(--icon-size);
+  margin-right: 12px;
+}
+
+.w3-bar-block .w3-bar-item.w3-button {
+  color: black; /* Default color */
+  transition: color 0.2s ease; /* Smooth transition effect */
+}
+
+.w3-bar-block .w3-bar-item.w3-button:hover {
+  color: #4CAF50 !important; /* Hover color */
+}
+
+.w3-bar-item.w3-button.active {
+  color: #4CAF50 !important;
+}
