@@ -42,21 +42,28 @@ document.addEventListener('DOMContentLoaded', () => {
       <i class="fa fa-remove"></i>
     </a>
     <!-- <img src="Images/placeholder.png" style="width:45%;" class="w3-round"><br><br> -->
-    <h4><b>PORTFOLIO</b></h4>
+    <h1><b>VICKEY XIA</b></h1>
     <p class="w3-text-grey"></p>
   </div>
   <div class="w3-bar-block">
     <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>ABOUT</a> 
     <a href="#portfolio" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-th-large fa-fw w3-margin-right"></i>PORTFOLIO</a> 
   </div>
+</div>
+  <div class="w3-container">
+    <h5>Email:</h5>
+    <h5>vickeyxia2003@gmail.com</h5>
+    <p class="w3-text-grey"></p>
+  </div>
 <div class="w3-panel w3-large social-icons">
-  <a href="https://www.linkedin.com/in/vickey-xia-3926a526b/" target="_blank" rel="noopener noreferrer" title="LinkedIn" class="w3-hover-opacity">
+  <!-- class="w3-hover-opacity" -->
+  <a href="https://www.linkedin.com/in/vickey-xia-3926a526b/" target="_blank" rel="noopener noreferrer" title="LinkedIn" >
     <i class="fa fa-linkedin"></i>
   </a>
-  <a href=" https://github.com/La1ing" target="_blank" rel="noopener noreferrer" title="GitHub" class="w3-hover-opacity">
+  <a href=" https://github.com/La1ing" target="_blank" rel="noopener noreferrer" title="GitHub">
     <i class="fa fa-github"></i>
   </a>
-</div>
+
 </nav>
 
 <!-- Overlay effect when opening sidebar on small screens -->
@@ -66,8 +73,8 @@ document.addEventListener('DOMContentLoaded', () => {
 <div class="w3-main" style="margin-left:300px">
 
   <!-- About -->
-  <div class="w3-container w3-padding-large" style="margin-bottom:32px">
-    <h4><b>About Me</b></h4>
+  <div id="about" class="w3-container w3-padding-large" style="margin-bottom:32px">
+    <h1><b>About Me</b></h1>
     <p>Hello, my name is Vickey, a Computer Systems Engineering student at the University of Auckland.</p>
     <hr>
     
@@ -75,7 +82,7 @@ document.addEventListener('DOMContentLoaded', () => {
     <!-- Progress bars / Skills -->
     <p>•	Coding Skills: C, C++, Java, Python, MATLAB, R. <br>
         •	Software Tools: KiCad / Altium, LTspice / Cadence(PSpice), Git / GitHub, Autodesk (Inventor and AutoCAD).<br>
-          •	Hardware: Soldering (SMT and THT), Oscilloscope and Digital Multimeter.<br>
+        •	Hardware: Soldering (SMT and THT), Oscilloscope and Digital Multimeter.<br>
     </p>
 
     <p>
@@ -92,14 +99,21 @@ document.addEventListener('DOMContentLoaded', () => {
   </div>
 
   <!-- Header -->
-  <header id="portfolio">
+  <!-- <header id="portfolio">
     <a href="#"><img src="Images/placeholder.png" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
     <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
     <div class="w3-container">
     <h1><b>My Portfolio</b></h1>
     </div>
-  </header>
-  
+  </header> -->
+  <section id = "portfolio">
+    <header>
+      <a href = "#"> <img src="Images/placeholder.png" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
+      <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span> 
+      <div class="w3-container"> 
+      <h1><b>My Portfolio</b></h1> 
+      </div> 
+    </header>
   <!-- First Photo Grid-->
   <div class="w3-row-padding">
     <div class="w3-third w3-container w3-margin-bottom">
@@ -150,7 +164,7 @@ document.addEventListener('DOMContentLoaded', () => {
       <img src="Images/GAMEBOY.png" alt="Norway" style="width:100%" class="w3-hover-opacity">
       <div class="w3-container w3-white">
         <p><b>Gameboy Emulator</b></p>
-        <p> A C++ project aiming to the hardware of a Game Boy. 
+        <p> A C++ project aiming to the emulate the hardware of a Game Boy. 
             The behaviour of an 8-bit CISC microprocessor (Sharp SM83) is emulated. 
             .</p>
       </div>

@@ -13,9 +13,34 @@
 }
 
 .w3-bar-block .w3-bar-item.w3-button:hover {
+  background-color: #e8f5e9 !important;
   color: #4CAF50 !important; /* Hover color */
 }
 
 .w3-bar-item.w3-button.active {
   color: #4CAF50 !important;
+}
+
+.social-icons a {
+  color: black;
+  transition: color 180ms ease, transform 120ms ease;
+}
+.social-icons a i {
+  transition: color 180ms ease, transform 120ms ease;
+}
+.social-icons a[href*="linkedin.com"]:hover i {
+  color: #4CAF50;
+  transform: translateY(-2px);
+}
+.social-icons a[href*="github.com"]:hover i {
+  color: #4CAF50;
+  transform: translateY(-2px);
+}
+
+a[href$="VickeyXia-cv.pdf"] {
+  transition: background-color 180ms ease, color 180ms ease, transform 120ms ease;
+}
+a[href$="VickeyXia-cv.pdf"]:hover {
+  background-color: #7cd37f !important;
+  color: #fff !important;
 }
