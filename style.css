@@ -93,3 +93,10 @@ body.modal-open { overflow: hidden; }
   color: #4CAF50;
   cursor: pointer;
 }
+
+.menu-button{
+    position: fixed;
+    top: 12px;
+    right: 12px;
+    z-index: 1200;  
+}
