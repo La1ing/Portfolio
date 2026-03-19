@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
 </div>
   <div class="w3-container">
     <h5>Email:</h5>
-    <h5>vickeyxia2003@gmail.com</h5>
+    <a href="#" id="email-link" data-email="vickeyxia2003@gmail.com" class="email-link">vickeyxia2003@gmail.com</a>
     <p class="w3-text-grey"></p>
   </div>
 <div class="w3-panel w3-large social-icons">
@@ -359,6 +359,42 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 </script>
 
+<script>
+const el = document.getElementById('email-link');
+
+function copyToClipboard(text){
+  if (navigator.clipboard && window.isSecureContext) {
+    return navigator.clipboard.writeText(text);
+  }
+  // fallback
+  const ta = document.createElement('textarea');
+  ta.value = text;
+  ta.style.position = 'fixed';
+  ta.style.left = '-9999px';
+  document.body.appendChild(ta);
+  ta.select();
+  try {
+    document.execCommand('copy');
+    document.body.removeChild(ta);
+    return Promise.resolve();
+  } catch (err) {
+    document.body.removeChild(ta);
+    return Promise.reject(err);
+  }
+}
+
+el.addEventListener('click', function(e){
+  e.preventDefault();
+  const email = this.dataset.email || this.textContent.trim();
+  copyToClipboard(email).then(() => {
+    const prev = this.textContent;
+    this.textContent = 'Copied!';
+    setTimeout(() => this.textContent = prev, 1400);
+  }).catch(() => {
+    alert('Could not copy. Please select and copy manually.');
+  });
+});
+</script>
 
 </body>
 </html>

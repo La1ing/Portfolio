@@ -80,3 +80,16 @@ body.modal-open { overflow: hidden; }
 .project-modal.open .modal-close { 
   transform: translateY(-12px); 
 }
+
+#email-link,
+.email-link {
+  color: black;
+  text-decoration: none;
+  transition: color 100ms ease;
+}
+
+#email-link:hover,
+.email-link:hover {
+  color: #4CAF50;
+  cursor: pointer;
+}
