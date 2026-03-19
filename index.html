@@ -99,13 +99,6 @@ document.addEventListener('DOMContentLoaded', () => {
   </div>
 
   <!-- Header -->
-  <!-- <header id="portfolio">
-    <a href="#"><img src="Images/placeholder.png" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
-    <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
-    <div class="w3-container">
-    <h1><b>My Portfolio</b></h1>
-    </div>
-  </header> -->
   <section id = "portfolio">
     <header>
       <a href = "#"> <img src="Images/placeholder.png" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
@@ -116,107 +109,162 @@ document.addEventListener('DOMContentLoaded', () => {
     </header>
   <!-- First Photo Grid-->
   <div class="w3-row-padding">
-    <!-- <div class="w3-third w3-container w3-margin-bottom">
-      <img src="Images/DAC_1.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
-      <div class="w3-container w3-white">
-        <p><b>Bluetooth DAC/AMP</b></p>
-        <p>Designing a battery-powered Bluetooth LE 32-bit Digital-to-Analog audio converter. A STM32WBA55CG is used
-            as the microcontroller, programmed in C, with a custom BLE application controlling input DAC signals (I2S),
-            OLED screen (I2C), rotary encoder, and buttons. A custom 4-layer PCB is designed in KiCad, featuring QFN and
-            TSSOP packaged chips. Simulated and verified battery power supply design and amplifier with SPICE-Based
-            simulation. Status: Tested and verified prototype PCB for the DAC and amplifier circuit using an Oscilloscope.</p>
-      </div>
-    </div> -->
+
     <div class="w3-third w3-container w3-margin-bottom">
       <article class="project-card" data-title="Bluetooth DAC/AMP" data-img="Images/DAC_1.jpg">
         <img src="Images/DAC_1.jpg" alt="Bluetooth DAC/AMP" style="width:100%" class="w3-hover-opacity">
         <div class="w3-container w3-white">
           <h4><b>Bluetooth DAC/AMP</b></h4>
-          <p class="teaser">Designing a battery-powered ... Status: Tested and verified prototype.</p>
-
+          <p class="teaser" aria-hidden = "false">Designing a battery-powerered Bluetooth LE 32-bit Digital-to-Analog audio converter. <b>...</b></p>
         <!-- hidden paragraphs / images -->
         <div class="extra" hidden>
-          <p>Development notes: PCB designed in KiCad; used QFN parts.</p>
-          <p>Status: Prototype tested with oscilloscope.</p>
+        <p>Designing a battery-powerered Bluetooth LE 32-bit Digital-to-Analog audio converter. A STM32WBA55CG is used
+            as the microcontroller, programmed in C, with a custom BLE application controlling input DAC signals (I2S),
+            OLED screen (I2C), rotary encoder, and buttons. A custom 4-layer PCB is designed in KiCad, featuring QFN and
+            TSSOP packaged chips. Simulated and verified battery power supply design and amplifier with SPICE-Based
+            simulation. Status: Tested and verified prototype PCB for the DAC and amplifier circuit using an Oscilloscope.</p>
           <div class="thumbs" aria-hidden="true">
-            <img src="Images/DAC_2.jpg" alt="DAC view 2" style="width:48%;margin-right:4%;">
-            <img src="Images/DAC_3.jpg" alt="DAC view 3" style="width:48%;">
+            <img src="Images/DAC_3.jpg" alt="DAC view 2" style="width:48%;margin-right:4%;">
+            <img src="Images/DAC_4.jpg" alt="DAC view 3" style="width:48%;">
           </div>
         </div>
-       
         </div>
       </article>
     </div>
+
     <div class="w3-third w3-container w3-margin-bottom">
-      <img src="Images/JARVIS_3.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
-      <div class="w3-container w3-white">
-        <h4><b>Ferrous Fellow</b></h4>
-        <p>A two-week team project creating a toy robot using an RP2040 microcontroller programmed in C++. TensorFlow
-            Lite and OpenCV were used for speech and facial recognition, and emotions were analysed through the OpenAI
-            API, which then recommended music. Mainly responsible for implementing TensorFlow, I2C for OLED screen,
-            UART for communication with host device, ADC for microphone and PWM for servo motor control in the MCU.
-            Also worked on adjusting the host device program to ensure proper communication with the MCU</p>
-      </div>
+      <article class="project-card" data-title="Ferrous Fellow" data-img="Images/JARVIS_3.jpg">
+        <img src="Images/JARVIS_3.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+        <div class="w3-container w3-white">
+          <h4><b>Ferrous Fellow</b></h4>
+          <p class="teaser" aria-hidden = "false">A two-week team project creating a toy robot using an RP2040 microcontroller programmed in C++. <b>...</b></p>
+          <!-- hidden paragraphs / images -->
+          <div class="extra" hidden>
+          <p>A two-week team project creating a toy robot using an RP2040 microcontroller programmed in C++. TensorFlow
+              Lite and OpenCV were used for speech and facial recognition, and emotions were analysed through the OpenAI
+              API, which then recommended music. Mainly responsible for implementing TensorFlow, I2C for OLED screen,
+              UART for communication with host device, ADC for microphone and PWM for servo motor control in the MCU.
+              Also worked on adjusting the host device program to ensure proper communication with the MCU.</p>
+          <div class="thumbs" aria-hidden="true">
+            <img src="Images/JARVIS_2.jpg" alt="DAC view 2" style="width:48%;margin-right:4%;">
+            <img src="Images/JARVIS_4.jpg" alt="DAC view 3" style="width:48%;">
+          </div>
+        </div>
+        </div>
+      </article>
     </div>
-    <div class="w3-third w3-container">
-      <img src="Images/209_1.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
-      <div class="w3-container w3-white">
-        <h4><b>Power Sensor</b></h4>
-        <p>Course project COMPSYS 209: Designed a power sensing circuit that sensed power in the load range 2.5VA - 7.5VA. The LCD would display the RMS voltage,
-            peak current, and the instantaneous power. Acheived final grade of 93.05%.
-        </p>
-      </div>
+
+    <div class="w3-third w3-container w3-margin-bottom">
+      <article class="project-card" data-title="Power Sensor" data-img="Images/209_1.jpg">
+        <img src="Images/209_1.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+        <div class="w3-container w3-white">
+          <h4><b>Power Sensor</b></h4>
+          <p class="teaser" aria-hidden = "false">Course project COMPSYS 209: Designed a power sensing circuit that sensed power in the load range 2.5VA - 7.5VA. <b>...</b></p>
+          <!-- hidden paragraphs / images -->
+          <div class="extra" hidden>
+          <p>Course project COMPSYS 209: Designed a power sensing circuit that sensed power in the load range 2.5VA - 7.5VA. The LCD would display the RMS voltage,
+              peak current, and the instantaneous power. Acheived final grade of 93.05%.</p>
+          <div class="thumbs" aria-hidden="true">
+            <img src="Images/209_2.jpg" alt="DAC view 2" style="width:48%;margin-right:4%;">
+            <img src="Images/209_3.jpg" alt="DAC view 3" style="width:48%;">
+          </div>
+        </div>
+      </article>
     </div>
   </div>
   
   <!-- Second Photo Grid-->
   <div class="w3-row-padding">
+
     <div class="w3-third w3-container w3-margin-bottom">
-      <img src="Images/MEOW_1.png" alt="Norway" style="width:100%" class="w3-hover-opacity">
-      <div class="w3-container w3-white">
-        <h4><b>Custom Numeric Keypad</b></h4>
-        <p>Designed a keypad with a custom PCB and 3D printed case. A 2-layer PCB was designed using KiCad, featuring
-            an RP2040 MCU, hotswap sockets for switches and a rotary encoder. Firmware written in C utilising the QMK
-            library. The case was designed using Autodesk Inventor and AutoCAD.</p>
-      </div>
+      <article class="project-card" data-title="Custom Numeric Keypad" data-img="Images/MEOW_3.jpg">
+        <img src="Images/MEOW_3.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+        <div class="w3-container w3-white">
+          <h4><b>Custom Numeric Keypad</b></h4>
+          <p class="teaser" aria-hidden = "false">Designed a keypad with a custom PCB and 3D printed case. <b>...</b></p>
+          <!-- hidden paragraphs / images -->
+          <div class="extra" hidden>
+          <p>Designed a keypad with a custom PCB and 3D printed case. A 2-layer PCB was designed using KiCad, featuring
+              an RP2040 MCU, hotswap sockets for switches and a rotary encoder. Firmware written in C utilising the QMK
+              library. The case was designed using Autodesk Inventor and AutoCAD.</p>
+          <div class="thumbs" aria-hidden="true">
+            <img src="Images/MEOW_2.png" alt="DAC view 2" style="width:48%;margin-right:4%;">
+            <img src="Images/MEOW_1.png" alt="DAC view 3" style="width:48%;">
+          </div>
+        </div>
+        </div>
+      </article>
     </div>
+
     <div class="w3-third w3-container w3-margin-bottom">
-      <img src="Images/GAMEBOY.png" alt="Norway" style="width:100%" class="w3-hover-opacity">
-      <div class="w3-container w3-white">
-        <h4><b>Gameboy Emulator</b></h4>
-        <p> A C++ project aiming to the emulate the hardware of a Game Boy. 
-            The behaviour of an 8-bit CISC microprocessor (Sharp SM83) is emulated. 
-            .</p>
-      </div>
+      <article class="project-card" data-title="Gameboy Emulator" data-img="Images/GAMEBOY.png">
+        <img src="Images/GAMEBOY.png" alt="Norway" style="width:100%" class="w3-hover-opacity">
+        <div class="w3-container w3-white">
+          <h4><b>Gameboy Emulator</b></h4>
+          <p class="teaser" aria-hidden = "false">A C++ project aiming to the emulate the hardware of a Game Boy.
+              The behaviour of an 8-bit CISC microprocessor (Sharp SM83) is emulated.<b>...</b></p>
+          <!-- hidden paragraphs / images -->
+          <div class="extra" hidden>
+          <p> A C++ project aiming to the emulate the hardware of a Game Boy.
+              The behaviour of an 8-bit CISC microprocessor (Sharp SM83) is emulated.</p>
+          </div>
+        </div>
+      </article>
     </div>
-    <div class="w3-third w3-container">
-      <img src="Images/CHIP8_2.png" alt="Norway" style="width:100%" class="w3-hover-opacity">
-      <div class="w3-container w3-white">
-        <h4><b>Chip-8 Emulator</b></h4>
-        <p> A C++ project that emulates the instruction set of the Chip-8 system.
-            Able to run ROMS smoothly, except for ones using variations of the ISA.
-            SDL2 was used for graphics and the input system</p>
-      </div>
+
+    <div class="w3-third w3-container w3-margin-bottom">
+      <article class="project-card" data-title="Chip-8 Emulator" data-img="Images/CHIP8_2.png">
+        <img src="Images/CHIP8_2.png" alt="Norway" style="width:100%" class="w3-hover-opacity">
+        <div class="w3-container w3-white">
+          <h4><b>Chip-8 Emulator</b></h4>
+          <p class="teaser" aria-hidden = "false">A C++ project that emulates the instruction set of the Chip-8 system.
+              Able to run ROMS smoothly, except for ones using variations of the ISA.
+              SDL2 was used for graphics and the input system <b>...</b></p>
+          <!-- hidden paragraphs / images -->
+          <div class="extra" hidden>
+          <p> A C++ project that emulates the instruction set of the Chip-8 system.
+              Able to run ROMS smoothly, except for ones using variations of the ISA.
+              SDL2 was used for graphics and the input system</p>
+          <div class="thumbs" aria-hidden="true">
+            <img src="Images/CHIP8_1.png" alt="DAC view 2" style="width:48%;margin-right:4%;">
+          </div>
+          </div>
+        </div>
+      </article>
     </div>
   </div>
 
   <!-- Third Photo Grid-->
   <div class="w3-row-padding">
     <div class="w3-third w3-container w3-margin-bottom">
-      <img src="Images/LEDRTOS.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
-      <div class="w3-container w3-white">
-        <h4><b>LedRTOS</b></h4>
-        <p>Built from scratch a Real Time Operating System (RTOS) using C and Assembly. Implements scheduling of LED
-            blinks through priority-based preemptive scheduling with static priorities.</p>
-      </div>
+      <article class="project-card" data-title="LedRTOS" data-img="Images/LEDRTOS.jpg">
+        <img src="Images/LEDRTOS.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+        <div class="w3-container w3-white">
+          <h4><b>LedRTOS</b></h4>
+          <p class="teaser" aria-hidden = "false">Built from scratch a Real Time Operating System (RTOS) using C and Assembly. Implements scheduling of LED
+              blinks through priority-based preemptive scheduling with static priorities.<b>...</b></p>
+          <!-- hidden paragraphs / images -->
+          <div class="extra" hidden>
+          <p>Built from scratch a Real Time Operating System (RTOS) using C and Assembly. Implements scheduling of LED
+              blinks through priority-based preemptive scheduling with static priorities.</p>
+          </div>
+        </div>
+      </article>
     </div>
+
     <div class="w3-third w3-container w3-margin-bottom">
-      <img src="Images/RISK.webp" alt="Norway" style="width:100%" class="w3-hover-opacity">
-      <div class="w3-container w3-white">
-        <h4><b>Risk map traversal</b></h4>
-        <p>Course project SOFTENG281: Implemented shortest path graph traversal algorithms in a map based on the classic game Risk. 
-            Implemented object-oriented progamming, software design patterns, data structures and algorithms. Acheived final grade of 99.64%.</p>
-      </div>
+      <article class="project-card" data-title="Risk map traversal" data-img="Images/RISK.webp">
+        <img src="Images/RISK.webp" alt="Norway" style="width:100%" class="w3-hover-opacity">
+        <div class="w3-container w3-white">
+          <h4><b>Risk map traversal</b></h4>
+          <p class="teaser" aria-hidden = "false">Course project SOFTENG281: Implemented shortest path graph traversal algorithms in a map based on the classic game Risk. 
+              Implemented object-oriented progamming, software design patterns, data structures and algorithms. Acheived final grade of 99.64%.<b>...</b></p>
+          <!-- hidden paragraphs / images -->
+          <div class="extra" hidden>
+          <p>Course project SOFTENG281: Implemented shortest path graph traversal algorithms in a map based on the classic game Risk. 
+              Implemented object-oriented progamming, software design patterns, data structures and algorithms. Acheived final grade of 99.64%.</p>
+        </div>
+      </article>
     </div>
   </div>
 
@@ -274,11 +322,8 @@ document.addEventListener('DOMContentLoaded', () => {
     imageEl.src = card.dataset.img || '';
     imageEl.alt = card.dataset.title || '';
 
-    const teaser = card.querySelector('.teaser');
-    let content = teaser ? teaser.innerHTML : card.querySelector('.w3-container').innerHTML;
-    
-    const extra = card.querySelector('.extra');
-    if (extra) content += extra.innerHTML;
+    const extra = card.querySelector('.extra'); 
+    let content = extra.innerHTML;
     bodyEl.innerHTML = content;
 
     modal.classList.add('open');
