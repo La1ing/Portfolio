@@ -83,11 +83,12 @@ document.addEventListener('DOMContentLoaded', () => {
   <div id="about" class="w3-container w3-padding-large" style="margin-bottom:32px">
     <h1><b>About Me</b></h1>
     <p>Hello, my name is Vickey, a Computer Systems Engineering student at the University of Auckland.</p>
+    <p>Upcoming Firmware Engineering Intern at Apple :0.</p>
     <hr>
     
     <h4>Technical Skills</h4>
     <!-- Progress bars / Skills -->
-    <p>•	Coding Skills: C, C++, Java, Python, MATLAB, R. <br>
+    <p>•	Coding Skills: C, C++, MATLAB, Java, Python, R. <br>
         •	Software Tools: KiCad / Altium, LTspice / Cadence(PSpice), Git / GitHub, Autodesk (Inventor and AutoCAD).<br>
         •	Hardware: Soldering (SMT and THT), Oscilloscope and Digital Multimeter.<br>
     </p>
@@ -101,6 +102,31 @@ document.addEventListener('DOMContentLoaded', () => {
     </header>
   <!-- First Photo Grid-->
   <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <article class="project-card" data-title="Tank Arena" data-img="Images/BUH_1.jpg">
+        <img src="Images/BUH_1.jpg" alt="Tank Arena" style="width:100%" class="w3-hover-opacity">
+        <div class="w3-container w3-white">
+          <h4><b>Tank Arena</b></h4>
+          <p class="teaser" aria-hidden = "false"> Won the Engineering Excellence Award for the Part III division. <b>...</b></p>
+        <!-- hidden paragraphs / images -->
+        <div class="extra" hidden>
+        <a href="https://www.linkedin.com/feed/update/urn:li:activity:7488355540826300416/"> L*nkedin Post </a>
+        <p> Won the Engineering Excellence Award for the Part III division. </p>  
+        <p> One-month long 5-man team project. 2-man tank fighter that uses custom 3D printed parts. 
+          Tanks shoot using 38kHzIR emitters and is controlled over a phone & server using WebSockets. </p>
+        <p> Worked on group leadership/direction, Sensor filtering/signal conditioning circuit simulation (LTspice), PCB design/optimisation (Altium), 3D model of tank (Autodesk Inventor), Tank soldering/assembly, Firmware code to connect to WebSocket & debugging (ESP32). </p>
+
+
+          <div class="thumbs" aria-hidden="true">
+            <img src="Images/BUH_5.png" alt="DAC view 2" style="width:70%;margin-right:4%;">
+            <img src="Images/BUH_4.png" alt="DAC view 3" style="width:70%;">
+            <img src="Images/BUH_3.jpg" alt="DAC view 3" style="width:70%;">
+            <img src="Images/BUH_2.jpg" alt="DAC view 2" style="width:48%;margin-right:4%;">
+          </div>
+        </div>
+        </div>
+      </article>
+    </div>
 
     <div class="w3-third w3-container w3-margin-bottom">
       <article class="project-card" data-title="Bluetooth DAC/AMP" data-img="Images/DAC_1.jpg">
@@ -145,7 +171,9 @@ document.addEventListener('DOMContentLoaded', () => {
         </div>
       </article>
     </div>
-
+   </div>   
+  <!-- Second Photo Grid-->
+  <div class="w3-row-padding">
     <div class="w3-third w3-container w3-margin-bottom">
       <article class="project-card" data-title="Power Sensor" data-img="Images/209_1.jpg">
         <img src="Images/209_1.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
@@ -163,10 +191,9 @@ document.addEventListener('DOMContentLoaded', () => {
         </div>
       </article>
     </div>
-  </div>
+
   
-  <!-- Second Photo Grid-->
-  <div class="w3-row-padding">
+
 
     <div class="w3-third w3-container w3-margin-bottom">
       <article class="project-card" data-title="Custom Numeric Keypad" data-img="Images/MEOW_3.jpg">
@@ -203,7 +230,9 @@ document.addEventListener('DOMContentLoaded', () => {
         </div>
       </article>
     </div>
-
+  </div>
+  <!-- Third Photo Grid-->
+  <div class="w3-row-padding">
     <div class="w3-third w3-container w3-margin-bottom">
       <article class="project-card" data-title="Chip-8 Emulator" data-img="Images/CHIP8_2.png">
         <img src="Images/CHIP8_2.png" alt="Norway" style="width:100%" class="w3-hover-opacity">
@@ -224,10 +253,9 @@ document.addEventListener('DOMContentLoaded', () => {
         </div>
       </article>
     </div>
-  </div>
 
-  <!-- Third Photo Grid-->
-  <div class="w3-row-padding">
+
+
     <div class="w3-third w3-container w3-margin-bottom">
       <article class="project-card" data-title="LedRTOS" data-img="Images/LEDRTOS.jpg">
         <img src="Images/LEDRTOS.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
@@ -258,6 +286,7 @@ document.addEventListener('DOMContentLoaded', () => {
         </div>
       </article>
     </div>
+    
   </div>
 
   <!-- Pagination -->
